@@ -8,6 +8,14 @@ from datetime import datetime
 from datetime import timedelta
 
 st.set_page_config(layout="wide")
+st.markdown("""
+        <style>
+               .block-container {
+                    padding-top: 2rem;
+                    padding-bottom: 0rem;
+                }
+        </style>
+        """, unsafe_allow_html=True)
 
 try:
     excel = pd.read_excel('LIST-VN.xlsx')
